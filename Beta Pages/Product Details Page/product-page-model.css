@@ -23,7 +23,7 @@ body{
 /*********************************************************************************************************************************************************/
 .header {
     background-color: #ffad17;
-    height: 18vh;
+    height: 22vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,19 +41,20 @@ body{
 }
 
 .container1 {
-    height: 80%;
+    height: 70%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .menu-container {
     width: 80%;
-    height: 20%;
+    height: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 1%;
 }
 
 .header .navbar .container1 div h3 {
@@ -76,8 +77,8 @@ body{
 }
 
 .header .navbar .container1 img {
-    height: 100%;
-    width: 12%;
+    /* height: 100%; */
+    width: 18%;
 }
 
 .icons {
@@ -93,7 +94,7 @@ body{
 
 .header .navbar .container1 input {
     border: 10px solid transparent;
-    padding: 10px;
+    padding: 5px;
     width: 35%;
     border-radius: 5px;
     outline: none;
@@ -124,14 +125,13 @@ body{
     flex: 1;
     text-align: right;
     background-color: #ffad17;
-
 }
 
 .menu-container li {
     list-style: none;
     display: inline-block;
     margin-right: 20px;
-    float: left;
+    /* float: left; */
     line-height: 40px;
     position: relative;
 }
@@ -145,10 +145,11 @@ body{
 .menu-container li a {
     display: block;
     text-decoration: none;
-    font-size: 20px;
-    font-family: roboto;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #1e1e1e;
     padding: 22 14px;
+    font-weight: 500;
 }
 
 .menu-container li a:hover{
