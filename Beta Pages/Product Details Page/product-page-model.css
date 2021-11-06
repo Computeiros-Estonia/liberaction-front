@@ -23,7 +23,7 @@ body{
 /*********************************************************************************************************************************************************/
 .header {
     background-color: #ffad17;
-    height: 22vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

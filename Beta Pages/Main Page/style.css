@@ -23,7 +23,7 @@ body{
 /*********************************************************************************************************************************************************/
 .header {
     background-color: #ffad17;
-    height: 22vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,11 +48,11 @@ body{
 }
 
 .menu-container {
-    width: 80%;
+    width: 60%;
     height: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 1%;
 }
@@ -78,7 +78,7 @@ body{
 
 .header .navbar .container1 img {
     /* height: 100%; */
-    width: 18%;
+    width: 13%;
 }
 
 .icons {
@@ -127,7 +127,7 @@ body{
     padding-bottom: 2%;
 } */
 
-.menu-container nav {
+.menu-container {
     width: 100%;
     height: 20%;
     flex: 1;
@@ -148,12 +148,12 @@ body{
     list-style: inside;
     display: block;
     position: absolute;
-    float: left;
+    /* float: left; */
 }
 .menu-container li a {
     display: block;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #1e1e1e;
     padding: 22 14px;
@@ -172,46 +172,39 @@ p{
 /*********************************************************************************************************************************************************/
 /* banner configurations                                                                                                                                 */
 /*********************************************************************************************************************************************************/
-.banner-container {
-    align-self: center;   
-}
-
-.banner-container nav {
+.banner {
+    display: flex;
+    align-self: center; 
+    align-items: center;
+    /* justify-content: center; */
     width: 100%;
-    height: 375px;
+    height: 75vh;
     background-color: #fcf9dd;
     align-self: center;
-
+    position: relative;
 }
 
-.slider{
+.banner img {
     width: 100%;
-    height: 375px;
-    border-radius: 10px;
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 2000ms;
 }
 
-.slides{
-    width: 500%;
-    height: 375px;
-    display: flex;
+.banner img.selected {
+    opacity: 1;
 }
 
-.slides input{
-    display: none;
-}
+.banner div img {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+} 
 
-.slide{
-    width: 20%;
-    transition: 2s;
-}
 
-.slide img{
-    width: 100%;
-    height: 375px;
-}
-
-/* CSS for manual slide navigation*/
+/* CSS for manual slide navigation
 .navigation-manual{
     position: absolute;
     width: 100%;
@@ -219,11 +212,12 @@ p{
     display: flex;
     justify-content: center;
     align-self:flex-end;
+    padding: 15px;
 }
 
 .manual-btn{
-    border: 2px solid #1b1c17;;
-    padding: 5px;
+    border: 2px solid #999898;;
+    padding: 4px;
     border-radius: 20px;
     cursor: pointer;
     transition: 1s;
@@ -235,7 +229,7 @@ p{
 }
 
 .manual-btn:hover{
-    background:#1b1c17;
+    background:#999898;
 }    
 
 #radio1:checked ~ .first{
@@ -248,7 +242,7 @@ p{
 
 #radio3:checked ~ .first{
     margin-left: -40%;   
-}
+} */
 
 
 /*********************************************************************************************************************************************************/
@@ -388,6 +382,7 @@ p{
         flex-basis: 30%;
         min-width: 250px;
         margin-bottom: 30px;
+        transition: transform 0.5s;
     }
     
     .col-3 img{
@@ -458,6 +453,12 @@ p{
 .footer-col-3, .footer-col-4{
     flex-basis: 12%;
     text-align: center;
+}
+
+.footer-col-4 img {
+    cursor: pointer;
+    margin: 4px;
+    height: 25px;
 }
 
 ul{
@@ -551,4 +552,155 @@ ul{
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+}
+
+
+/* Responsive */
+.mobile-menu div {
+    width: 32px;
+    height: 4px;
+    background: #fff;
+    margin: 5px;
+    transition: 0.6s;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 999px) {
+
+    .header .navbar .container1 img {
+        width: 50%;
+    }
+
+    .header .navbar .container1 div h3 {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .header .navbar .container1 input {
+        display: none;
+    }
+
+    .menu-container {
+        visibility: hidden;
+        transition: step-start;
+        overflow-y: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    /* Navbar responsiva */
+
+    .container-follow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .newsletter{
+        background: #ffad17;
+        height: 470px;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 10px 30px;
+        margin: 10px;
+    }
+    
+    .container-newsletter p {
+        color: white;
+    }
+    
+    .container-newsletter span {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .container-newsletter h6 {
+        margin-top: 10px;
+        color: white;
+    }
+    
+    .container-cadastro {
+        width: 80%;
+        border-radius: 20px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-cadastro input {
+        background-color: #fcf9dd;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        margin: 10px;
+        width: 85%;
+        height: 30%;
+        padding: 8px;
+    }
+    
+    .container-cadastro button {
+        background-color: #ffad17;
+        border: none;
+        width: 85%;
+        height: 30%;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .menu-container.active {
+        position: absolute;
+        width: 100%;
+        top: 12vh;
+        right: 0;
+        height: calc(100vh - 11vh);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        visibility: visible;
+        transition: .5s;
+        
+    }
+
+    .banner.inactive {
+        display: none;
+    }
+
+    .menu-container.active body {
+        margin: 0;
+    }
+
+    .content.active {
+        position: absolute;
+        top: 1150px;
+    }
+
 }
