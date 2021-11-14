@@ -13,16 +13,21 @@
     
     <body>
         
-        <!------------------------------------------------- Site Header start -------------------------------------------------------------------->
+        <!-- Site Header -->
         <div class="header">
-            <div class="navbar">   
+            <div class="navbar">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>    
                 <div class="container1">
                     <img src="logo.png">
                     <input type="text" placeholder="Buscar produto, serviço e muito mais!">
                     
                     <div>
                         <h3>Bem vindo!
-                            <span><a href="">Entre</a> ou <a href="">Cadastre-se</a></span>
+                            <span><a href="login.html">Entre</a> ou <a href="cadastro.html">Cadastre-se</a></span>
                         </h3>
                     </div>
                     <div class="icons">
@@ -30,11 +35,14 @@
                         <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="">
                         
                     </div>
-                    <div class="mobile-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div> 
+                    <div class="mobile-search">
+                        <div class="search-icon"></div>
+                        <div class="search-input">
+                            <input id="search-text" type="text" placeholder="Search">
+                        </div>
+                        <span class="clear"></span>
+                    </div>
+                    
                 </div>    
             </div>
             <ul class="menu-container">
@@ -47,25 +55,21 @@
             
         </div>
         
-        <!------------------------------------------------------------------------------------------------------>
+    <div class="content">
         
-        
-        
-        
-        <div class="content">
-        
-        <!-------------------------------------------------   Banner starts   ---------------------------------------->
+       <!-- Banner starts -->
         <div class="banner">
             <img class="selected" src="https://images.unsplash.com/photo-1605792657660-596af9009e82?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1402&q=80" alt="">
             <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="">
             <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt="">
+            <div class="control">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
         </div>
-        <!------------------------------------------------------------------------------------------------------------->
         
-        
-        
-        
-        <!-------------------------------------------   Featured Products starts  -------------------------------------------------------------->
+        <!-- Featured Products starts  -->
         <div class="small-container">
             <h2 class="title">Produtos</h2>
             <div class="row">
@@ -341,8 +345,7 @@
         </div>
     </div>
 </div>
-    <!--------------------------------------------------------------------------------------------------------------------------------------->
-    
+
     <script src="script.js"></script>    
 </body>
 </html>

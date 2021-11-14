@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiberAction</title>
-    <link rel="stylesheet" href="product-page-model.css">
+    <link rel="stylesheet" href="/Beta Pages/Main Page/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,15 +13,13 @@
 
 <body>
     
-
-
     <!------------------------------------------------- Site Header start -------------------------------------------------------------------->
     <div class="header">
-        <div class="navbar">    
+        <div class="navbar">   
             <div class="container1">
-                <img src="logo.png" alt="">
+                <img src="logo.png">
                 <input type="text" placeholder="Buscar produto, serviço e muito mais!">
-
+                
                 <div>
                     <h3>Bem vindo!
                         <span><a href="">Entre</a> ou <a href="">Cadastre-se</a></span>
@@ -30,8 +28,14 @@
                 <div class="icons">
                     <img src="https://cdn-icons-png.flaticon.com/512/2/2267.png" alt="">
                     <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="">
-
+                    
                 </div>
+                <div class="mobile-search"></div>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div> 
             </div>    
         </div>
         <ul class="menu-container">
@@ -40,14 +44,13 @@
             <li><a href="#">Aulas particulares</a></li>
             <li><a href="#">Moda Ancap</a></li>
             <li><a href="#">Anuncie Conosco</a></li>
-       </ul>
-
+        </ul>
+        
     </div>
 
-   <!--------------------------------------------------------------------------------------------------------------------------------------->
-
-
-    <!-- single product details -->
+    
+           
+    <!-- Single Product Details -->
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
@@ -73,8 +76,6 @@
                 </div>
 
             </div> 
-            
-            
             
             <div class="col-2">
                 <p>Home / Moda Ancap</p>
@@ -117,15 +118,7 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-   <!----------------------------------------------------- You can also be interested in -----------------------------------------------------------> 
+   <!-- You can also be interested in  -->
 
    <div class="categories">
         <div class="small-container">
@@ -149,9 +142,7 @@
         </div>  
     </div>       
 
-   <!--------------------------------------------------------------------------------------------------------------------------------------->
-
-    <!-----------------------------------------------------  Questions Start  -------------------------------------------------------------->
+    <!-- Questions Start  -->
     <div class="categories">
         <div class="small-container">
             <h2 class="title">Perguntas, avaliações, e mais</h2>
@@ -163,6 +154,7 @@
             </div>
         </div>  
     </div>  
+    
     <!--------------------------------------------------------------------------------------------------------------------------------------->
 
    <!--------------------------------------------------------- Footer starts ---------------------------------------------------------------> 
@@ -206,9 +198,9 @@
         </div>
         <p class="copyright">2021 - Powered by Estonia Tech</p>
     </div>
+    
 </div>
 
-    <!------------------------------------------------     js for product gallery   ---------------------------------------------------------->
     <script>
         var ProductImg = document.getElementById("ProductImg");
         var SmallImg = document.getElementsByClassName("small-img")
@@ -225,7 +217,7 @@
             ProductImg.src = SmallImg[3].src  
         }
     </script>
-    <!--------------------------------------------------------------------------------------------------------------------------------------->
+    <script src="/Beta Pages/Main Page/script.js"></script>
     
 </body>
 </html>
