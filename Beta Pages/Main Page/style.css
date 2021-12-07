@@ -134,7 +134,7 @@ body {
 
 .login-box {
     background-color: #fff;
-    width: 25%;
+    width: 450px;
     height: 450px;
     border-radius: 15px;
     position: absolute;
@@ -213,7 +213,7 @@ body {
 
 .cadastro-box {
     background-color: #fff;
-    width: 20%;
+    width: 450px;
     height: 830px;
     border-radius: 15px;
     position: absolute;
@@ -434,9 +434,6 @@ body {
     color: #fcf9dd;
     display: block;
 }
-
-
-
 
 /* Banner Configurations */
 
@@ -790,6 +787,103 @@ ul {
     margin: 10px;
     padding: 10px;
     cursor: pointer;
+}
+
+/* Perfil Page */
+.perfil-container {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.info-user-container {
+    width: 300px;
+    margin: 120px 70px;
+}
+
+.info-user-card {
+    background-color: #fff;
+    height: 60px;
+    width: 220px;
+    margin: 20px 5px;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-user-card p {
+    font-size: 12px;
+}
+
+.info-user-card label {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.info-user-card.selected {
+    border-left: 10px solid #ecab39;
+}
+
+.info-user-request {
+    background-color: #f9f9f9;
+    width: 500px;
+    height: 500px;
+    margin: 120px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-request-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    height: 150px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.info-request-card.positive {
+    border-left: 5px solid #2b961f;
+}
+
+.info-request-response label.positive {
+    color: #2b961f;
+}
+
+.info-request-card.negative {
+    border-left: 5px solid #c40000;
+}
+
+.info-request-response label.negative {
+    color: #c40000;
+}
+
+.info-request-response {
+    margin: 10px;
+}
+
+.info-request-details {
+    display: flex;
+    margin: 10px;
+}
+
+.info-request-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.info-request-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bolder;
 }
 
 /* Responsive */
