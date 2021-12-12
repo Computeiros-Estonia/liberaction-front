@@ -795,6 +795,7 @@ ul {
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
 }
 
 .info-user-container {
@@ -883,7 +884,56 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    font-weight: bolder;
+    font-weight: 600;
+}
+
+.info-user-fav {
+    background-color: #f9f9f9;
+    width: 500px;
+    height: 500px;
+    margin: 120px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-user-fav label {
+    position: relative;
+    font-size: 20px;
+}
+
+.info-user-fav label::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 530px;
+    height: 1px;
+    background-color: #8a8a8a;
+}
+
+.info-user-fav p {
+    margin: 15px 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.info-user-fav-icon {
+    height: 120px;
+    width: 120px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 30px 0 0 0;
+    position: relative;
+}
+
+.info-user-heart-icon {
+    background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png');
+    background-size: cover;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
 }
 
 /* Responsive */
