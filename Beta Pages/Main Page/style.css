@@ -936,6 +936,56 @@ ul {
     width: 25px;
 }
 
+.info-user-register {
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 120px 70px;
+}
+
+.info-user-register label {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.info-user-register input {
+    background-color: #e2e1e1;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    /* height: 80px; */
+    width: 300px;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+}
+
+.info-user-register input::placeholder {
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.info-user-register a {
+    color: #000;
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+.info-user-register button {
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ecab39;
+    border: none;
+    outline: none;
+    width: 250px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
 /* Responsive */
 .mobile-menu div {
     width: 32px;
