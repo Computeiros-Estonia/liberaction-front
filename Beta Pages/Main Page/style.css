@@ -803,6 +803,11 @@ ul {
     margin: 120px 70px;
 }
 
+.info-user-container a {
+    text-decoration: none;
+    color: #000;
+}
+
 .info-user-card {
     background-color: #fff;
     height: 60px;
@@ -813,6 +818,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 
 .info-user-card p {
@@ -915,6 +921,10 @@ ul {
     margin: 15px 0;
     font-size: 12px;
     font-weight: 600;
+}
+
+#metrics_btn, #about_btn {
+    cursor: pointer;
 }
 
 .info-user-fav-icon {
