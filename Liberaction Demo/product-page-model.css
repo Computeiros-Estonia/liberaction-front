@@ -21,9 +21,14 @@ body{
 /*********************************************************************************************************************************************************/
 /* header                                                                                                                                                */          
 /*********************************************************************************************************************************************************/
+
+
+/****************************************************************/
+/*                          Header                              */
+/****************************************************************/                                                                                                                                                       
 .header {
     background-color: #ffad17;
-    height: 15vh;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,11 +53,11 @@ body{
 }
 
 .menu-container {
-    width: 80%;
+    width: 60%;
     height: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 1%;
 }
@@ -78,7 +83,7 @@ body{
 
 .header .navbar .container1 img {
     /* height: 100%; */
-    width: 18%;
+    width: 13%;
 }
 
 .icons {
@@ -102,7 +107,6 @@ body{
     background-repeat: no-repeat;
     background-size: 3%;
     background-position: right;
-    
 }
 
 .header .navbar .container2 input {
@@ -112,9 +116,202 @@ body{
     border-radius: 0px;
     outline: none;
     color: #ffad17;
-    
 }
 
+/****************************************************************/
+/*                  Header Login e Cadastro                     */
+/****************************************************************/
+.header-alt {
+    background-color: #ffad17;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 20px 35px;
+}
+
+.header-alt img {
+    width: 13%;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+ 
+.container1 {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container {
+    width: 60%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.header .navbar .container1 div h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.header .navbar .container1 div h3 span {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.header .navbar .container1 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.header .navbar .container1 img {
+    /* height: 100%; */
+    width: 13%;
+}
+
+.icons {
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.header .navbar .container1 div img {
+    height: 15%;
+    width: 15%;
+}
+
+.header .navbar .container1 input {
+    border: 10px solid transparent;
+    padding: 5px;
+    width: 35%;
+    border-radius: 5px;
+    outline: none;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/126/126474.png);
+    background-repeat: no-repeat;
+    background-size: 3%;
+    background-position: right;
+}
+
+.header .navbar .container2 input {
+    border: 10px solid transparent;
+    padding: 10px;
+    width: 35%;
+    border-radius: 0px;
+    outline: none;
+    color: #ffad17;
+}
+
+/****************************************************************/
+/*                    Menu Configurations                       */
+/****************************************************************/
+.menu-container {
+    width: 100%;
+    height: 20%;
+    flex: 1;
+    text-align: right;
+    background-color: #ffad17;
+}
+
+.menu-container li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 40px;
+    position: relative;
+}
+
+.menu-container li ul {
+    list-style: inside;
+    display: block;
+    position: absolute;   
+}
+.menu-container li a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1e1e1e;
+    padding: 22 14px;
+    font-weight: 500;
+}
+
+.menu-container li a:hover{
+    color: #fcf9dd;
+    display: block;
+}
+
+/****************************************************************/
+/*                     Banner Configurations                    */
+/****************************************************************/
+.banner {
+    display: flex;
+    align-self: center; 
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: 75vh;
+    background-color: #fcf9dd;
+    align-self: center;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 2000ms;
+}
+
+.banner img.selected {
+    opacity: 1;
+}
+
+.banner div img {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+} 
+
+.control {
+    position: absolute;
+    top: 70vh;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.control div {
+    background-color: transparent;
+    height: 70%;
+    width: 14px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.control div.selected {
+    background-color: #000;
+    transition: ease-out 1s;
+}
 /*********************************************************************************************************************************************************/
 /* menu configurations                                                                                                                                   */
 /*********************************************************************************************************************************************************/

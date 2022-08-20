@@ -391,6 +391,7 @@ body {
 }
 
 .cart-items button {
+    object-fit: fill;
     border: none;
     border-radius: 5px;
     outline: none;
