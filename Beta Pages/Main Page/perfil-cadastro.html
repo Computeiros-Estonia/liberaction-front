@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiberAction</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
@@ -77,71 +77,82 @@
         </div>
 
         <div class="info-user-register">
-            <label for="">Nome completo:</label>
-            <div>
+            <form>
+                <label for="">Nome completo:</label>
                 <input type="text" placeholder="Cleysonvaldo da Silva">
                 <a href="">Alterar</a>
-            </div>
 
-            <label for="">Gênero</label>
-            <div class="single-input">
-                <div class="check"></div>Ferminino
-                <div class="check"></div>Masculino
-                <div class="check"></div>Outro/Prefiro não informar
-            </div>
+                <label for="">Gênero</label>
 
-            <label for="">Data de nascimento:</label>
-            <div>
-                <input type="text" placeholder="12/12/1990">
-                <a href="">Alterar</a>
-            </div>
+                <div class="radio-container">
 
-            <label for="">CPF ou CNPJ:</label>
-            <div>
-                <input type="text" placeholder="1321445235">
-                <a href="">Alterar</a>
-            </div>
+                    <label class="custom-radio-btn">
+                        <!-- <span>Ferminino</span> -->
+                        <input type="radio" name="genero" value="feminino">
+                        <span></span>
+                    </label>
 
-            <label for="">E-mail:</label>
-            <div>
-                <input type="text" placeholder="cleysonvaldo@gmail.com">
-                <a href="">Alterar</a>
-            </div>
+                    <label>Feminino</label>
+                    
+                    <label class="custom-radio-btn">
+                        <!-- <span>Masculino</span> -->
+                        <input type="radio" name="genero" value="masculino">
+                        <span></span>
+                    </label>
 
-            <label for="">Telefone:</label>
-            <div>
-                <input type="text" placeholder="12344354">
-                <a href="">Alterar</a>
-            </div>
+                    <label>Masculino</label>
+                    
+                    <label class="custom-radio-btn">
+                        <!-- <span>Outro/Prefiro não informar</span> -->
+                        <input type="radio" name="genero" value="outros">
+                        <span></span>
+                    </label>
 
-            <label for="">Crie uma senha:</label>
-            <div>
-                <input type="text" placeholder="*********">
-                <a href="">Alterar</a>
-            </div>
+                    <label>Outro/Prefiro não informar</label>
+                
+                  </div>
 
-            <label for="">Confirme a senha que criou:</label>
-            <div>
-                <input type="text" placeholder="*********">
-                <a href="">Alterar</a>
-            </div>
-            <button>Salvar alterações</button>
+                <label for="">Data de nascimento:</label>
+                <div>
+                    <input type="date">
+                    <a href="">Alterar</a>
+                </div>
+
+                <label for="">CPF ou CNPJ:</label>
+                <div>
+                    <input type="text" placeholder="1321445235">
+                    <a href="">Alterar</a>
+                </div>
+
+                <label for="">E-mail:</label>
+                <div>
+                    <input type="text" placeholder="cleysonvaldo@gmail.com">
+                    <a href="">Alterar</a>
+                </div>
+
+                <label for="">Telefone:</label>
+                <div>
+                    <input type="text" placeholder="12344354">
+                    <a href="">Alterar</a>
+                </div>
+
+                <label for="">Crie uma senha:</label>
+                <div>
+                    <input type="password" placeholder="*********">
+                    <a href="">Alterar</a>
+                </div>
+
+                <label for="">Confirme a senha que criou:</label>
+                <div>
+                    <input type="password" placeholder="*********">
+                    <a href="">Alterar</a>
+                </div>
+                <button type="submit">Salvar Alterações</button>
+            </form>
         </div>    
     </div>
+
+    <script src="static/js/script.js"></script>
+
 </body>
 
-<script>
-    let checkGender = document.querySelectorAll('.check');
-    
-
-    checkGender[0].addEventListener('click', () => {
-        checkGender[0].classList.toggle('active')  
-    })
-    checkGender[1].addEventListener('click', () => {
-        checkGender[1].classList.toggle('active')   
-    })
-    checkGender[2].addEventListener('click', () => {
-        checkGender[2].classList.toggle('active')   
-    })
-
-</script>

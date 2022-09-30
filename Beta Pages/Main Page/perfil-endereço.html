@@ -8,7 +8,7 @@
     <title>LiberAction</title>
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
     
 <body>
@@ -56,9 +56,9 @@
     <div class="perfil-container">
         <div class="info-user-container">
             <div class="info-user-card">
-                <label for="">Olá, bem vindo a sua conta!</label>
+                <label>Olá, bem vindo a sua conta!</label>
             </div>
-            <div class="info-user-card selected">
+            <div class="info-user-card">
                 <label for="">Pedidos</label>
                 <p>Acompanhe o envio</p>
             </div>
@@ -70,36 +70,67 @@
                 <label for="">Cadastro</label>
                 <p>Veja e altere seus dados, email, senha, etc</p>
             </div>
-            <div class="info-user-card">
+            <div class="info-user-card selected">
                 <label for="">Endereço</label>
                 <p>Veja e altere seus endereços</p>
             </div>
         </div>
-        <div class="info-user-request">
-            <div class="info-request-card positive">
-                <div class="info-request-response">
-                    <label class="positive" for="">Ebaaaa! Pedido entregue com sucesso</label>
-                </div>
-                <div class="info-request-details">
-                    <div class="info-request-icon"></div>
-                    <div class="info-request-text">
-                        <p>Nome do Produto</p>
-                        <p>2 Unidade(s)</p>
+        
+        <div class="info-user-address">
+            <label for="">Endereços <p>Aqui você pode cadastrar, editar ou excluir seus endereços</p></label>
+
+            <div class="info-user-address-container">
+
+                <div class="info-user-address-card">
+                    <div>
+                        <label><p>Cleitonvaldo da Silva</p></label>
+                            <p class="info-user-address-card-address" style="font-weight: normal;">Av. Endereço do Cidadão que Aqui Compra, 666</p>
+
+                        <p style="margin-top: 3px; font-weight: normal;">Apto 22</p>
+
+                        <div class="radio-container-address-card">
+                            <label class="custom-radio-btn-address-card">
+                                <input type="radio" name="end-principal" value="endereco-principal">
+                                <span></span>
+                            </label>
+                            <span style="margin-left: 5px; font-size: 12px; font-weight: 600;">Endereço Principal</span>
+                        </div>
+
+                        <div class="info-user-address-card-buttons">
+                            <button>Editar</button>
+                            <button>Excluir</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="info-request-card negative">
-                <div class="info-request-response">
-                    <label class="negative" for="">Pedido cancelado</label>
-                </div>
-                <div class="info-request-details">
-                    <div class="info-request-icon"></div>
-                    <div class="info-request-text">
-                        <p>Nome do Produto</p>
-                        <p>1 Unidade(s)</p>
+
+                <div class="info-user-address-card">
+                    <div>
+                        <label><p>Cleitonvaldo da Silva</p></label>
+                            <p class="info-user-address-card-address" style="font-weight: normal;">Av. Endereço do Cidadão que Aqui Compra, 666</p>
+
+                        <p style="margin-top: 3px; font-weight: normal;">Apto 22</p>
+
+                        <div class="radio-container-address-card">
+                            <label class="custom-radio-btn-address-card">
+                                <input type="radio" name="end-principal" value="endereco-principal">
+                                <span></span>
+                            </label>
+                            <span style="margin-left: 5px; font-size: 12px; font-weight: 600;">Endereço Principal</span>
+                        </div>
+
+                        <div class="info-user-address-card-buttons">
+                            <button>Editar</button>
+                            <button>Excluir</button>
+                        </div>
                     </div>
                 </div>
+
+            <div class="info-user-address-card-new">
+                <i class="bi-plus"></i>
             </div>
+
+        </div>
+
         </div>
     </div>
 </body>
