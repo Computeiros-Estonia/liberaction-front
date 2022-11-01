@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet"  href="static\css\styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    </head>
+
+<a href="{% url 'core:index' %}"></a>
+
+<body>
+    <!-- Header starts --> 
+    <div class="header-alt">
+        <img src="static/images/logo.png" alt="">
+    </div>
+
+    <!-- Content starts --> 
+    <div>
+        <form>
+
+            <div class="container-form">
+                <div class="cadastro-box">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="jxh6U5fexxWKH6XswrJs7FWMOdVSyTbZ6P11FvhIJ7ebBqxhFbqjfrATdxnJbFcC">
+                    
+                    <div class="titulo-formulario">
+                        <h2>Só mais umas coisinhas...</h2>
+                    </div>
+
+                    <div class="tags-container">
+                        <div>
+                            <h3>Tags</h3>
+                        </div>
+                        
+                        <div>
+                        <p>As tags são úteis para que as pessoas consigam buscar seus produtos, principalmente por associações.</p>
+                        </div>
+
+                        <textarea class="description-input" name="base-description" cols="40" rows="10" required id="id_base-description"></textarea>
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <div><p>Insira uma vírgula depois de cada tag:</p></div>
+                            <div><p>xx/100</p></div>
+                        </div>
+                    </div>
+
+                    <div style="height: 50px;"></div>
+
+                    <div class="picture-container">
+                        <div>
+                            <h3 style="margin-bottom: 30px;">Fotos</h3>
+                        </div>
+
+                        <div class="picture-container-picturebox">
+                            <div class="picture-container-picturebox-add">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12vw" height="12vw" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="picture-container-picturebox-cover">
+                                <img src="static/images/product-10.jpg" alt="">
+                                <div><p>Capa</p></div>
+                            </div>
+
+                            <div class="picture-container-picturebox-picture">
+                                <img src="static/images/product-5.jpg" alt="">
+                            </div>
+
+                            <div class="picture-container-picturebox-picture">
+                                <img src="static/images/product-8.jpg" alt="">
+                            </div>
+
+                            <div class="picture-container-picturebox-picture">
+                                <img src="static/images/product-7.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
