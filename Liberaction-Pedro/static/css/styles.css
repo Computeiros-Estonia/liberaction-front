@@ -342,7 +342,7 @@ body {
 .tags-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 300px;
 }
 
 .tags-container p {
@@ -366,13 +366,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     align-self: center;
-    justify-self: center;
+    margin-top: 40px;
 }
 
 .picture-container-picturebox-add {
     display: flex;
-    width: 20vw;
-    height: 20vw;
+    width: 120px;
+    height: 120px;
     align-items: center;
     justify-content: center;
     color: #ecab39;
@@ -385,8 +385,8 @@ body {
 .picture-container-picturebox-cover {
     background:rgb(182, 182, 182);
     display: flex;
-    width: 20vw;
-    height: 20vw;
+    width: 120px;
+    height: 120px;
     align-items: center;
     justify-content: center;
     border: 4px solid #ecab39;
@@ -407,8 +407,8 @@ body {
 
 .picture-container-picturebox-cover-imagewrapper {
     display: flex;
-    width: 19.5vw;
-    height: 19vw;
+    width: 99%;
+    height: 99%;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -423,8 +423,8 @@ body {
 .picture-container-picturebox-picture {
     background:rgb(182, 182, 182);
     display: flex;
-    width: 20vw;
-    height: 20vw;
+    width: 120px;
+    height: 120px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
@@ -442,8 +442,8 @@ body {
 
 .picture-container-picturebox-more {
     display: flex;
-    width: 20vw;
-    height: 20vw;
+    width: 120px;
+    height: 120px;
     align-items: center;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -456,8 +456,8 @@ body {
 
 .picture-container-picturebox-more-bar {
     background:rgb(182, 182, 182);
-    width: 1.5vw;
-    height: 19vw;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 
@@ -467,7 +467,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 5vw;
+    font-size: 250%;
     font-weight: bold;
     color: rgb(182, 182, 182);
 }
@@ -475,7 +475,7 @@ body {
 .cadastro-box {
     margin: -50px 20px 20px;
     background-color: #fff;
-    width: auto;
+    width: 500px;
     height: auto;
     border-radius: 15px;
     display: flex;
@@ -1465,6 +1465,51 @@ transform: translate(-50%, -50%) scale(2.8);
 }
 
 /****************************************************************/
+/*                          Escolha                             */
+/****************************************************************/
+
+.container-yellow {
+    background-color: #FCF9DD;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container-options {
+    display: flex;
+    position: absolute;
+    bottom: -90px;
+}
+
+.container-options-text {
+    margin: 30px;
+    color: #ecab39;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    padding: 10px 0px;
+    color: #ecab39;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+/****************************************************************/
 /*                          Footer                              */
 /****************************************************************/
 
@@ -1830,6 +1875,15 @@ ul {
         opacity: 0;
         transition: ease-out 0.2;
     }
+}
+
+@media (max-width: 700px) {
+
+    .container-options {
+        flex-direction: column;
+        bottom: -250px;
+    }
+
 }
 
 .choice-background {
